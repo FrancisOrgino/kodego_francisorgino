@@ -22,8 +22,15 @@ fun main (){
     var sold3 = 30
     var sold4 = 30
 
+   println("item $item1 current inventory $stock2 less item sold $sold4 ")
 
-
-
+    println("item $item1 current inventory $stock2 less item sold $sold4 ")
+    println("item $item2 current inventory $stock2 less item sold $sold4 ")
+    println("item $item3 current inventory $stock2 less item sold $sold4 ")
+    println("item $item4 current inventory $stock2 less item sold $sold4 ")
 
 }
+
+
+
+
