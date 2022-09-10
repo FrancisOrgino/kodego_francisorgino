@@ -1,29 +1,44 @@
-fun main (){
+fun main () {
 
-   // included variables
-    var yes1 : String = "Yes"
-
-    var cont : String = "another amount?"
+    // first function entering amount
 
 
-   println("Enter Amount you want to Deposit")
-    var amount1 : Int = readln().toInt()
-
-    println("You deposited $amount1  ")
-
-   println("do you want to add another amount?")
-    var yesNo : String = readln().toString()
+    println("Enter Amount you want to Deposit")
+    var amount1: Double = readln().toDouble()
 
 
-    if(yesNo == "yes") { println("please enter amount you want to add")
-
-        var amount2: Int = readln().toInt()
-
-        println("You added $amount2  ")
+    // loop for yes no and quit to amount2
 
 
+    do {
+        println("do you want to continue?")
+        var response: String = readln().toString()
 
-    }
+
+        if (response == "yes") {
+            println("please add another amount")
+            var amount2: Double = readln().toDouble()
+            amount1 = amount1 + amount2
+
+            // if no a set input is ask " do you want to add another amount"
+        }
+        else if(response == "no"){
+            println("do you want to add another amount?")
+            response = readln()
+
+            // if quit total amount is showed and divisor is asked
+        }
+        if(response =="quit"){
+            println("your total amount is $amount1 divide by how many?")
+        }
+    } while (response == "yes")
+
+    // when divided total amount is will print
+
+    var divisor: Int = readln().toInt()
+    println("your denominations are ${amount1/divisor}")
+
+
 
 
 
