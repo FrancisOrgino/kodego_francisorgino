@@ -4,7 +4,7 @@ fun main () {
 
 
     println("Enter Amount you want to Deposit")
-    var amount1: Double = readln().toDouble()
+    var amount1: Int = readln().toInt()
 
 
     // loop for yes no and quit to amount2
@@ -17,7 +17,7 @@ fun main () {
 
         if (response == "yes") {
             println("please add another amount")
-            var amount2: Double = readln().toDouble()
+            var amount2: Int = readln().toInt()
             amount1 = amount1 + amount2
 
             // if no a set input is ask " do you want to add another amount"
