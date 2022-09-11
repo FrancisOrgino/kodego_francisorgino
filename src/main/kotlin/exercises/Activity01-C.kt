@@ -2,34 +2,128 @@ package exercises
 
 fun main (){
 
-    val category1 = "Instant Noodles"
-    val category2 = "Canned Meat"
+    println("what do you want to buy")
 
-    var item1 = "Lucky me Beef"
-    var item2 = "Lucky me Chicken"
-    var item3 = "Lucky me Bulalo"
+    var response: String = readln().toString()
 
-    var item4 = "Highlands Cornedbeef"
-    var item5 = "Purefoods Cornedbeef"
-    var item6 = "Argentina Cornedbeef"
+    // choosing options to return or borrow
+    if (response == "Lucky me Beef")
+        luckyBeef(input = String())
+    if (response == "Lucky me Chicken")
+        luckyChicken(input = String())
+    if (response == "Lucky me Bulalo")
+        luckyBulalo(input = String())
+    if (response == "inventory")
+         inventory(input = String())
 
-    var stock1 = 100
-    var stock2 = 90
-    var stock3 = 80
-    var stock4 = 70
-    var sold1 = 10
-    var sold2 = 20
-    var sold3 = 30
-    var sold4 = 30
 
-   println("item $item1 current inventory $stock2 less item sold $sold4 ")
 
-    println("item $item1 current inventory $stock2 less item sold $sold4 ")
-    println("item $item2 current inventory $stock2 less item sold $sold4 ")
-    println("item $item3 current inventory $stock2 less item sold $sold4 ")
-    println("item $item4 current inventory $stock2 less item sold $sold4 ")
+
 
 }
+
+fun luckyBeef(input:String) {
+
+    println("how many lucky me beef")
+    var item1: Int = readln().toInt()
+
+    do {
+        println("do you want to add")
+        var response: String = readln().toString()
+
+
+        if (response == "yes") {
+            println("how many do you want to add")
+            var amount2: Int = readln().toInt()
+            item1 = item1 + amount2
+
+
+        }
+        else if(response == "no"){
+            println("the total you bought is $item1")
+            var stock1: Int = 100
+            stock1 = stock1 - item1
+            println("current inventory is $stock1")
+
+
+
+        }
+    } while (response == "yes")
+
+
+
+
+
+}
+
+fun luckyChicken(input:String){
+
+    println("how many lucky me Chicken?")
+    var item2: Int = readln().toInt()
+
+    do {
+        println("do you want to add")
+        var response: String = readln().toString()
+
+
+        if (response == "yes") {
+            println("how many do you want to add")
+            var amount2: Int = readln().toInt()
+            item2 = item2 + amount2
+
+
+        }
+        else if(response == "no"){
+            println("the total you bought is $item2 ")
+            var stock1: Int = 100
+            stock1 = stock1 - item2
+            println("current inventory is $stock1")
+
+
+        }
+    } while (response == "yes")
+
+
+
+
+
+}
+
+fun luckyBulalo(input:String) {
+
+    println("how many lucky me bulalo")
+    var item3: Int = readln().toInt()
+
+    do {
+        println("do you want to add")
+        var response: String = readln().toString()
+
+
+        if (response == "yes") {
+            println("how many do you want to add")
+            var amount2: Int = readln().toInt()
+            item3 = item3 + amount2
+
+
+        } else if (response == "no") {
+            println("the total you bought is $item3 ")
+            var stock1: Int = 100
+            stock1 = stock1 - item3
+            println("current inventory is $stock1")
+        }
+    } while (response == "yes")
+
+}
+    fun inventory(input:String) {
+
+
+
+        }
+
+
+
+
+
 
 
 
