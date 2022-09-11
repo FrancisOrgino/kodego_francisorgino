@@ -22,6 +22,8 @@ fun main() {
 
 fun borrowBook(input:String) {
 
+    //if borrowing a book
+
     println("what book you want to borrow?")
 
 
@@ -49,6 +51,9 @@ fun borrowBook(input:String) {
 }
 
 fun returnBook(input:String){
+
+    //if returning a book
+
     println("what book you want to return?")
 
     var toReturn: String = readln().toString()
