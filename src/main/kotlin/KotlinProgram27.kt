@@ -1,10 +1,7 @@
 fun main(){
-    var joe = Person("joe",21)
-    println("**********")
-    println("${joe.name}'s current age is ${joe.age}")
-    println("after 1 year")
-    joe.ageUp()
-    println("${joe.name}'s current age is ${joe.age}")
+  var anne = Person("anne")
+    anne.age =25
+    anne.displayAge()
 
 
 }
@@ -17,6 +14,9 @@ class Person(var name: String, var age: Int){
             println("age is $age")
 
         }
+
+    constructor(name: String):this(name, 21){}
+      constructor(age:Int):this("defaultname is",age){}
 
     fun walk(){
         println("a person walks")
