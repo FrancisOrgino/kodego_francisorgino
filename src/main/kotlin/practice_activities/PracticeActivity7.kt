@@ -1,23 +1,32 @@
 fun main(){
 
+    println("please enter the width")
+    var width: Double = readln().toDouble()
 
-palindromeChecker("String")
+
+    println("please enter the length")
+    var length: Double = readln().toDouble()
+
+    println("your width is $width")
+    println("your length is $length")
+    println("do you want to print area and perimeter?")
+    var response: String = readln().toString()
+
+
+
+
+    var multiplier: Int = 2
+     var area = width * length
+     var perimeter =  (length + width) * multiplier
+
+if(response =="yes") {
+
+
+    println("the rectangle area is $area")
+    println("the rectangle perimeter is $perimeter")
 }
-fun palindromeChecker(word:String) {
 
-    // first word input
-    println("please type your word")
-    var word: String = readln().toString()
-    println("your word is $word please retype to check if palindrome")
-
-    // word to reverse
-    var word2: String = readln().toString()
-    var reverse = word.reversed()
-
-    // palindrome checker
-    if (word2 == word) {
-        println("your word $word2 is a palindrome")
-    } else if (word2 == reverse) {
-        println("your word $word is not a palindrome")
-    }
 }
+
+
+
