@@ -65,6 +65,7 @@ fun main(){
 
        } else if (options == 5)
             println("your current battery is $batteryAdder %")
+            println("your current load is  $currentLoad")
             println("thank you")
 
    }while (options > 0)
